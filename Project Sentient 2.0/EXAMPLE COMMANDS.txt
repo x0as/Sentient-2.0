@@ -1,0 +1,50 @@
+✅ EMAIL & COMMUNICATION:
+email tracker test@example.com
+email lookup admin@google.com
+phone lookup +1-555-0123
+
+✅ NETWORK & DOMAIN ANALYSIS:
+whois google.com
+dns lookup microsoft.com
+check ssl github.com
+scan ports google.com
+subdomain enum tesla.com
+
+✅ FILE ANALYSIS:
+analyze file setup.py
+analyze file content setup.py
+identify hash 5d41402abc4b2a76b9719d911017c592
+
+✅ WEB SECURITY:
+scan website https://testphp.vulnweb.com
+dir brute https://example.com
+
+✅ HASH TOOLS:
+identify hash d41d8cd98f00b204e9800998ecf8427e
+crack hash 5d41402abc4b2a76b9719d911017c592
+
+✅ TRAFFIC & TESTING:
+send traffic https://httpbin.org/get
+imitate traffic https://example.com
+
+enable firewall
+
+firewall status
+
+disable firewall
+
+
+help
+scan website https://testphp.vulnweb.com
+subdomain enum tesla.com
+scan ports google.com
+check ssl github.com
+email tracker elon@tesla.com
+whois tesla.com
+dns lookup microsoft.com
+phone lookup +1-650-681-5000
+analyze file setup.py
+identify hash 5d41402abc4b2a76b9719d911017c592
+
+
+export last scan tesla_security_report.txt

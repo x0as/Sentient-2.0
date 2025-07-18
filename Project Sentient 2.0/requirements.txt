@@ -1,0 +1,12 @@
+selenium
+phonenumbers
+google-generativeai
+pymongo
+fuzzywuzzy
+requests
+google-search-results
+fastapi
+uvicorns
+python-whois
+tabulate
+whois
