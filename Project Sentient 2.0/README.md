@@ -1,123 +1,364 @@
-# Project Sentient
+# Project Sentient 2.0
 
-**Project Sentient** is an AI-powered command-line assistant designed for cybersecurity, automation, and digital forensics. First of its kind, Sentient acts as a helpful hacking AI, capable of understanding user commands and providing intelligent, conversational responses. It is modular, highly extensible, and leverages the Gemini API for advanced conversational AI—while giving the AI direct access to powerful cybersecurity, OSINT, and automation modules. This hybrid approach enables Sentient to not just chat, but to act, analyze, and automate complex security tasks far beyond standard AI assistants.
+[![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)](https://python.org)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-red.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![Version](https://img.shields.io/badge/version-1.0.2-green.svg)](https://github.com/x0as/Sentient)
 
----
-
-## Features
-
-- **Conversational AI:** Uses Gemini API for natural, context-aware chat, but with direct access to all modules and system actions.
-- **File Analysis:** Examine, edit, and understand files for suspicious content, malware, or improvements.
-- **Virus Scanning:** Scan files or directories for potential malware or viruses.
-- **PDF & Image Analysis:** Extract text, metadata, and scan for hidden or malicious content in PDFs and images.
-- **SQL & Website Vulnerability Testing:** Scan websites for SQL injection, XSS, sensitive files, and interesting paths.
-- **Traffic Sending & Imitation:** Send traffic or imitate real human traffic to websites.
-- **Phishing Simulation:** Copy entire websites to demonstrate phishing attacks.
-- **Malware & Virus Reverse Engineering:** Analyze and deconstruct malware or viruses.
-- **Password & Key Encryption/Decryption:** Encrypt, decrypt, and crack passwords and keys.
-- **Password Strength & Breach Checks:** Test password strength and check for breaches using public databases.
-- **Google Dorking & OSINT:** Perform advanced search and open-source intelligence gathering.
-- **Phone, Email, and Username Lookup:** Lookup and track phone numbers, emails, and usernames across platforms.
-- **WHOIS, DNS, and Subdomain Enumeration:** Gather domain intelligence and enumerate subdomains.
-- **Port Scanning & Directory Brute Forcing:** Scan ports and brute-force directories for hidden resources.
-- **SSL/TLS Security Checks:** Analyze SSL/TLS configurations for vulnerabilities.
-- **Log File Analysis:** Analyze log files for anomalies or security events.
-- **Hash Generation, Identification, and Cracking:** Work with hashes for security and forensics.
-- **GeoIP & Reverse IP Lookup:** Find the geographical location of IPs and enumerate domains on an IP.
-- **Shodan & VirusTotal Integration:** Search Shodan and scan files/URLs with VirusTotal.
-- **Username Checks & OSINT:** Check username availability and gather OSINT.
-- **Packet Capture & Analysis:** Analyze network packet captures (pcap files).
-- **Subdomain Takeover Detection:** Detect vulnerable subdomains.
-- **CVE Search:** Search for recent vulnerabilities (CVEs) for any software or technology.
-- **JWT Decoding & Analysis:** Decode and analyze JWT tokens.
-- **URL Expansion & Shortening:** Expand shortened URLs and check for malicious redirects.
-- **File Type Identification:** Identify file types based on content, not just extension.
-- **Custom Wordlist Generation:** Generate wordlists for brute-forcing.
-- **Threat Intelligence Feeds:** Pull and search latest threat intel from public feeds.
-- **YARA Rule Scanning:** Scan files with YARA rules for malware detection.
-- **Automated Report Generation:** Generate detailed PDF/HTML reports for scans and analyses.
-- **Scheduling & Automation:** Schedule scans and recurring tasks.
-- **Slack/Discord/Webhook Integration:** Send alerts or results to Slack, Discord, or via webhooks.
-- **Plugin System:** Easily add your own Python modules for new features.
-- **Auto-Update:** Self-update from the official repository.
-- **And much more—constantly evolving to meet new threats and challenges!**
+**Project Sentient 2.0** is an advanced AI-powered cybersecurity toolkit that combines the intelligence of Google's Gemini API with comprehensive security analysis modules. This conversational AI assistant is designed for cybersecurity professionals, researchers, and ethical hackers who need an intelligent, modular platform for security analysis, OSINT gathering, and digital forensics.
 
 ---
 
-## Memory & Persistence
+## 🚀 Features
 
-Sentient uses a MongoDB connection string (URI) to remember and store analysis results, file content, and other persistent data across sessions.  
-**You will be prompted to enter your MongoDB connection string when starting Sentient.**
+### 🤖 AI-Powered Analysis
+- **Conversational AI Interface:** Natural language interaction powered by Google Gemini API
+- **Intelligent Context Awareness:** Remembers analysis results and provides contextual recommendations
+- **Memory Persistence:** MongoDB integration for storing analysis history and results
 
-If you do not have a MongoDB URI or are unsure how to set one up, you can request access or assistance by emailing:  
-**muhammadhuzaifakhalidaziz@gmail.com**
+### 🔍 Security Analysis
+- **File Analysis:** Deep examination of files for malicious content and metadata extraction
+- **VirusTotal Integration:** Automated malware scanning and threat intelligence
+- **PDF & Image Analysis:** Extract metadata, hidden content, and security risks
+- **Hash Tools:** Generate, identify, and analyze various hash types
+- **Firewall Protection:** Security configuration analysis and recommendations
+
+### 🌐 Network Security
+- **Website Vulnerability Scanner:** SQL injection, XSS, and security misconfiguration detection
+- **Port Scanner:** Comprehensive port scanning with service detection
+- **Directory Brute Force:** Discover hidden directories and files
+- **SSL/TLS Checker:** Certificate analysis and security validation
+- **Subdomain Enumeration:** Comprehensive subdomain discovery
+- **Subdomain Takeover Detection:** Identify vulnerable subdomain configurations
+
+### 📊 Intelligence Gathering (OSINT)
+- **WHOIS & DNS Tools:** Domain intelligence and DNS analysis
+- **GeoIP & Reverse IP Lookup:** Geographic and hosting information
+- **Phone & Email Lookup:** Contact information intelligence
+- **Username Checker:** Social media and platform username analysis
+- **Email Spoof Testing:** Email security and authenticity verification
+- **Email Tracking:** Email delivery and engagement analysis
+
+### 🔒 Cryptography & Authentication
+- **JWT Analyzer:** JSON Web Token decoding and security analysis
+- **Password Strength Testing:** Comprehensive password security evaluation
+- **Breach Checker:** Check credentials against known data breaches
+- **URL Expander:** Analyze and expand shortened URLs safely
+
+### 📈 Advanced Analysis
+- **CVE Search:** Latest vulnerability research and threat intelligence
+- **Packet Analyzer:** Network traffic analysis and packet inspection
+- **Log Analyzer:** Security event correlation and anomaly detection
+- **Traffic Generation:** Realistic traffic simulation for testing
+
+### 🛠️ Automation & Integration
+- **Modular Architecture:** Easy-to-extend plugin system
+- **Batch Processing:** Automated scanning and analysis workflows
+- **Export Capabilities:** Multiple output formats for reporting
+- **API Integration:** Seamless third-party service integration
 
 ---
 
-## Getting Started
+## 🗄️ Database & Persistence
+
+Sentient 2.0 uses MongoDB for persistent storage of analysis results, scan history, and configuration data. This enables:
+
+- **Session Continuity:** Resume analysis sessions with full context
+- **Historical Analysis:** Track changes and trends over time
+- **Result Correlation:** Cross-reference findings across different scans
+- **Custom Intelligence:** Build your own threat intelligence database
+
+**MongoDB Setup:**
+You will be prompted to enter your MongoDB connection string when starting Sentient. If you need assistance setting up MongoDB or require access to a shared instance, contact: **muhammadhuzaifakhalidaziz@gmail.com**
+
+---
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+- Python 3.7 or higher
+- MongoDB instance (local or cloud)
+- Google Gemini API key
+
+### Quick Installation
 
 1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/yourusername/sentient.git
-   cd sentient
+   ```bash
+   git clone https://github.com/x0as/Sentient.git
+   cd Sentient
    ```
 
-2. **Install dependencies:**
-   ```sh
+2. **Install using pip (Recommended):**
+   ```bash
+   pip install -e .
+   ```
+
+   **Or install dependencies manually:**
+   ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the assistant:**
-   ```sh
-   python Sentient.py
+3. **Run Sentient:**
+   ```bash
+   # Using the installed console script
+   sentient
+   
+   # Or run directly
+   python -m sentient.main
    ```
 
-4. **Configure your API key:**
-   - Open `Sentient.py` and add your API key when prompted.
+### Windows Users
+For Windows users, you can use the provided batch files:
+- `Setup.bat` - Automated installation
+- `Start.bat` - Quick start script
+
+### Configuration
+
+1. **API Key Setup:** You'll be prompted to enter your Google Gemini API key on first run
+2. **MongoDB Connection:** Provide your MongoDB connection string when prompted
+3. **Premium Features:** Contact muhammadhuzaifakhalidaziz@gmail.com for premium API access
 
 ---
 
-## Usage
+## 💻 Usage
 
-Interact with Sentient through the command line. Type your cybersecurity or automation queries and receive intelligent responses. Type `exit` or `quit` to end the session.
+### Interactive Mode
+Launch Sentient and interact through natural language:
 
-**Access Key:** Google API Token.  
-For full experience, email muhammadhuzaifakhalidaziz@gmail.com for a Premium Api key/Token.
+```bash
+sentient
+```
+
+### Command Examples
+
+```bash
+# Website Security Analysis
+"scan website example.com for vulnerabilities"
+"check SSL certificate for example.com"
+"enumerate subdomains for example.com"
+
+# File Analysis
+"analyze file /path/to/suspicious.exe"
+"scan file with virustotal /path/to/file.pdf"
+"extract metadata from image.jpg"
+
+# Network Intelligence
+"port scan 192.168.1.1"
+"geoip lookup 8.8.8.8"
+"reverse IP lookup 1.2.3.4"
+
+# OSINT & Research
+"email lookup test@example.com"
+"phone lookup +1234567890"
+"username check across platforms john_doe"
+"whois lookup example.com"
+
+# Security Analysis
+"check password strength MyPassword123"
+"decode JWT token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9..."
+"check breach database for email@example.com"
+
+# Advanced Analysis
+"search CVE for apache"
+"analyze packet capture /path/to/capture.pcap"
+"check subdomain takeover for example.com"
+
+# Utility Commands
+"expand URL bit.ly/shortlink"
+"generate hash for text or file"
+"export results to report.txt"
+```
+
+### Batch Operations
+```bash
+# Multiple targets
+"scan multiple websites: example1.com, example2.com, example3.com"
+
+# Automated workflows
+"full security assessment for example.com"
+```
 
 ---
 
-## Example Commands
+## 🏗️ Architecture
 
-- `scan website example.com`
-- `analyze file C:\path\to\file.exe`
-- `email lookup test@example.com`
-- `phone lookup +1234567890`
-- `geoip lookup 8.8.8.8`
-- `shodan search apache`
-- `virustotal scan C:\path\to\file.exe`
-- `jwt decode <token>`
-- `cve search apache`
-- `subdomain takeover example.com`
-- `packet analyze C:\path\to\capture.pcap`
-- `export last scan scan_results.txt`
-- ...and many more!
+### Project Structure
+```
+sentient/
+├── main.py              # Main entry point and AI interface
+├── chromedriver.exe     # WebDriver for browser automation
+└── modules/             # Security analysis modules
+    ├── breach_checker.py        # Data breach verification
+    ├── cve_search.py           # CVE database search
+    ├── dir_bruteforce.py       # Directory enumeration
+    ├── dns_tools.py            # DNS analysis tools
+    ├── Email_Lookup.py         # Email intelligence
+    ├── email_spoof_test.py     # Email security testing
+    ├── Email_Tracker.py        # Email tracking analysis
+    ├── file_analysis.py        # File security analysis
+    ├── firewall_protection.py  # Firewall configuration
+    ├── geoip_lookup.py         # Geographic IP analysis
+    ├── hash_tools.py           # Cryptographic hash utilities
+    ├── image_metadata.py       # Image forensics
+    ├── jwt_analyzer.py         # JWT security analysis
+    ├── log_analyzer.py         # Log file analysis
+    ├── packet_analyzer.py      # Network packet analysis
+    ├── password_strength.py    # Password security assessment
+    ├── pdf_analyzer.py         # PDF security analysis
+    ├── Phone_Lookup.py         # Phone number intelligence
+    ├── port_scanner.py         # Network port scanning
+    ├── real_traffic.py         # Traffic simulation
+    ├── reverse_ip.py           # Reverse IP lookup
+    ├── ssl_checker.py          # SSL/TLS analysis
+    ├── subdomain_enum.py       # Subdomain discovery
+    ├── subdomain_takeover.py   # Subdomain security analysis
+    ├── traffic_sender.py       # Traffic generation
+    ├── url_expander.py         # URL analysis and expansion
+    ├── username_checker.py     # Username intelligence
+    ├── virustotal_scan.py      # VirusTotal integration
+    └── website_scanner.py      # Web application security
+```
+
+### Core Technologies
+- **AI Framework:** Google Generative AI (Gemini)
+- **Database:** MongoDB for persistence
+- **Network:** Scapy for packet analysis
+- **Web:** Selenium for browser automation
+- **Security:** Custom modules for specialized analysis
 
 ---
 
-## Disclaimer
+## 🔧 Development
 
-This project is intended for educational and ethical cybersecurity purposes only.  
-**The creator is not responsible for any misuse, illegal activity, or damage caused by the use of this software.**  
-Users are solely responsible for ensuring their actions comply with all applicable laws and regulations.
+### Adding Custom Modules
+
+Sentient's modular architecture makes it easy to add new security analysis capabilities:
+
+1. **Create a new module in `sentient/modules/`:**
+   ```python
+   # my_custom_module.py
+   def my_analysis_function(target, options=None):
+       """
+       Custom analysis function
+       Args:
+           target: The target to analyze
+           options: Additional options
+       Returns:
+           dict: Analysis results
+       """
+       results = {
+           'status': 'success',
+           'data': [],
+           'summary': 'Analysis complete'
+       }
+       return results
+   ```
+
+2. **Import in main.py:**
+   ```python
+   from .modules import my_custom_module
+   ```
+
+3. **Register with the AI interface** by adding command patterns to the natural language processor.
+
+### Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Make your changes and test thoroughly
+4. Submit a pull request with a clear description
 
 ---
 
-## License
+## 📋 Requirements
+
+### Python Dependencies
+- `google-generativeai>=0.3.0` - AI integration
+- `pymongo>=4.0.0` - Database connectivity
+- `requests>=2.25.1` - HTTP client
+- `selenium` - Web automation
+- `scapy>=2.4.5` - Packet analysis
+- `beautifulsoup4>=4.9.3` - HTML parsing
+- `cryptography>=3.4.8` - Cryptographic functions
+- `dnspython>=2.1.0` - DNS operations
+- `python-whois>=0.7.3` - WHOIS lookup
+- `tabulate>=0.8.9` - Data formatting
+- `fuzzywuzzy>=0.18.0` - String matching
+- `colorama>=0.4.4` - Terminal colors
+
+### System Requirements
+- **Operating System:** Windows, macOS, or Linux
+- **Python:** 3.7 or higher
+- **Memory:** Minimum 4GB RAM (8GB recommended)
+- **Network:** Internet connection for API access and external scans
+- **Storage:** 1GB free space for dependencies and logs
+
+---
+
+## 🛡️ Security & Ethics
+
+### Ethical Use Policy
+Project Sentient 2.0 is designed exclusively for:
+- **Educational purposes** in cybersecurity learning
+- **Authorized security testing** with proper permissions
+- **Research** in cybersecurity and threat intelligence
+- **Professional security assessments** by qualified personnel
+
+### Legal Compliance
+- **Always obtain proper authorization** before testing systems you do not own
+- **Respect privacy** and data protection laws
+- **Follow responsible disclosure** practices for discovered vulnerabilities
+- **Comply with local and international laws** regarding cybersecurity tools
+
+### Built-in Safeguards
+- Rate limiting to prevent abuse
+- Logging for accountability
+- Warning prompts for potentially sensitive operations
+- Integration with legitimate security APIs only
+
+---
+
+## ⚖️ License
 
 This project is licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)**.
 
-- **You may not use the material for commercial purposes.**
-- **You may not distribute modified versions of the project.**
-- **You must give appropriate credit if you share the project.**
+### License Terms:
+- ✅ **Attribution Required:** You must give appropriate credit when sharing
+- ❌ **No Commercial Use:** Cannot be used for commercial purposes
+- ❌ **No Derivatives:** Cannot distribute modified versions
+- ✅ **Personal Use:** Free for educational and personal cybersecurity research
 
-For more details, see [CC BY-NC-ND 4.0 License](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+For complete license details, see: [CC BY-NC-ND 4.0 License](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+---
+
+## ⚠️ Disclaimer
+
+### Legal Notice
+Project Sentient 2.0 is intended **exclusively** for:
+- Educational cybersecurity learning
+- Authorized penetration testing
+- Academic and professional research
+- Ethical security assessments
+
+### User Responsibility
+- **The creator is NOT responsible** for any misuse, illegal activity, or damage
+- **Users are solely responsible** for ensuring compliance with all applicable laws
+- **Always obtain proper authorization** before testing systems
+- **Respect privacy and data protection laws** in your jurisdiction
+
+### Professional Use
+This tool is designed for cybersecurity professionals who understand the legal and ethical implications of security testing. Improper use may violate computer crime laws in your jurisdiction.
+
+---
+
+## 🎯 Version Information
+
+- **Current Version:** 1.0.2
+- **Author:** x0as
+- **Last Updated:** July 2025
+- **Python Compatibility:** 3.7+
+- **Platform Support:** Windows, macOS, Linux
+
+---
+
+*Project Sentient 2.0 - Intelligent Cybersecurity Analysis Platform*
