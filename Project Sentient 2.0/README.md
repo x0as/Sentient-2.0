@@ -325,7 +325,7 @@ This project is licensed under the **Creative Commons Attribution-NonCommercial-
 - ✅ **Attribution Required:** You must give appropriate credit when sharing
 - ❌ **No Commercial Use:** Cannot be used for commercial purposes
 - ❌ **No Derivatives:** Cannot distribute modified versions
-- ✅ **Personal Use:** Free for educational and personal cybersecurity research
+- ✅ **Personal Use:** Free for personal educational and personal cybersecurity research
 
 For complete license details, see: [CC BY-NC-ND 4.0 License](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
